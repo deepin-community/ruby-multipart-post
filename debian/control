@@ -1,0 +1,33 @@
+Source: ruby-multipart-post
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper (>= 11~),
+               gem2deb,
+               rake
+Standards-Version: 4.2.1
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-multipart-post.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-multipart-post
+Homepage: https://github.com/nicksieger/multipart-post
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-multipart-post
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: multipart form post accessory for Net::HTTP
+ Adds a streamy multipart form post capability to Net::HTTP. Also
+ supports other methods besides POST.
+ .
+ FEATURES/PROBLEMS:
+ .
+  * Appears to actually work. A good feature to have.
+  * Encapsulates posting of file/binary parts and name/value parameter parts,
+    similar to most browsers' file upload forms.
+  * Provides an UploadIO helper class to prepare IO objects for inclusion in
+    the params hash of the multipart post object

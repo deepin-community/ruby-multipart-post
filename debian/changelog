@@ -1,0 +1,37 @@
+ruby-multipart-post (2.0.0-1) unstable; urgency=medium
+
+  [ Dmitry Smirnov ]
+  * New upstream release [December 2013].
+  * Added "debian/gbp.conf".
+  * Standards-Version: 3.9.6.
+  * Updated Vcs-Browser URL.
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+  [ Pirate Praveen ]
+  * Use salsa.debian.org in Vcs-* fields
+  * Bump Standards-Version to 4.2.1 (no changes needed)
+  * Bump debhelper compatibility level to 11
+  * Move debian/watch to gemwatch.debian.net
+  * Refresh packaging with dh-make-ruby -w
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 25 Dec 2018 18:00:53 +0530
+
+ruby-multipart-post (1.2.0-2) unstable; urgency=low
+
+  * Add README.txt to docs
+  * Bump standards version to 3.9.5 (no changes)
+  * Rebuild with gem2deb >= 0.7.5 (install gemspecs for all ruby versions)
+
+ -- Praveen Arimbrathodiyil <praveen@debian.org>  Mon, 06 May 2013 15:58:53 +0530
+
+ruby-multipart-post (1.2.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #691051)
+
+ -- Praveen Arimbrathodiyil <praveen@debian.org>  Mon, 06 May 2013 13:18:50 +0530
